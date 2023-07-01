@@ -4,4 +4,4 @@ Homework 1 and 2 (result of run): [QA_HW1-2_result.json](https://github.com/ItGr
 
 Homework Charles:   
 * [задание и ход выполнения](https://github.com/ItGroupAlex/Postman/blob/main/Charles_QA_HW.md "link")     
-* [выгрузка из Charles](https://github.com/ItGroupAlex/Postman/blob/main/Charles_QA_HW.md "link")   
+* [выгрузка из Charles](https://github.com/ItGroupAlex/Postman/blob/main/Charles_HW_export.chls "link")   
