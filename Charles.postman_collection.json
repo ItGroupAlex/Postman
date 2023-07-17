@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "2ac91e8c-5945-47f6-8168-f538124f8790",
+		"name": "Charles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ex1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/get_method?name=Alex&age=38",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Alex"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ex3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/get_method?name=Alex&age=38",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Alex"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ex4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/get_method?name=Alex&age=38",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Alex"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ex5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/get_method?name=Alex&age=38",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"get_method"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Alex"
+						},
+						{
+							"key": "age",
+							"value": "38"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ex2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "38",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "2000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ex6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Alex",
+							"type": "default"
+						},
+						{
+							"key": "age",
+							"value": "38",
+							"type": "default"
+						},
+						{
+							"key": "salary",
+							"value": "2000",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
