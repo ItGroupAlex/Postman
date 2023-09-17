@@ -1,0 +1,99 @@
+{
+	"id": "ef4aea45-6b4d-4167-ba24-601beb47d212",
+	"name": "HW3",
+	"timestamp": "2023-09-17T13:57:00.699Z",
+	"collection_id": "26184969-37b94363-8c28-4154-8993-f771be8676c7",
+	"folder_id": 0,
+	"environment_id": "26184969-d879f615-246f-4bbb-9240-0412e33e8cb4",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-17T13:56:59.915Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "08bfb65d-8c6a-47f0-8054-2c1156e11150",
+			"name": "EP_1",
+			"url": "162.55.220.72:5005/login",
+			"time": 133,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				133
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dd459a5b-d034-4319-b900-6a263c7b34a3",
+			"name": "EP_2",
+			"url": "162.55.220.72:5005/user_info",
+			"time": 139,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Schema is valid": true,
+				"Salary after 12 is correct count": true,
+				"Salary after 6 is correct count": true,
+				"Salary after 1.5 years is correct count": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Salary after 12 is correct count": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Salary after 6 is correct count": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Salary after 1.5 years is correct count": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				139
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Schema is valid": true,
+					"Salary after 12 is correct count": true,
+					"Salary after 6 is correct count": true,
+					"Salary after 1.5 years is correct count": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 272,
+	"collection": {
+		"requests": [
+			{
+				"id": "08bfb65d-8c6a-47f0-8054-2c1156e11150",
+				"method": "POST"
+			},
+			{
+				"id": "dd459a5b-d034-4319-b900-6a263c7b34a3",
+				"method": "POST"
+			}
+		]
+	}
+}
