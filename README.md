@@ -7,11 +7,11 @@ Homework 3 (result of run): [QA_HW3_result.json](https://github.com/ItGroupAlex/
 
 
 Homework Charles:   
-* [задание и ход выполнения](https://github.com/ItGroupAlex/Postman/blob/main/Charles_QA_HW.md "link")     
-* [выгрузка из Charles](https://github.com/ItGroupAlex/Postman/blob/main/Charles_HW_export.chls "link")
-* [выгрузка из Postman](https://github.com/ItGroupAlex/Postman/blob/main/Charles.postman_collection.json "link")   
+* [задание и ход выполнения](https://github.com/ItGroupAlex/Postman/blob/main/Charles/Charles_QA_HW.md "link")     
+* [выгрузка из Charles](https://github.com/ItGroupAlex/Postman/blob/main/Charles/Charles_HW_export.chls "link")
+* [выгрузка из Postman](https://github.com/ItGroupAlex/Postman/blob/main/Charles/Charles.postman_collection.json "link")   
 
 Homework Fiddler:   
-* [задание и ход выполнения](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler_QA_HW.md "link")     
-* [выгрузка из Fiddler](https://github.com/ItGroupAlex/Postman/blob/main/Rules_HW_fiddler.farx "link")
-* [выгрузка из Postman](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler.postman_collection.json "link")    
+* [задание и ход выполнения](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler/Fiddler_QA_HW.md "link")     
+* [выгрузка из Fiddler](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler/Rules_HW_fiddler.farx "link")
+* [выгрузка из Postman](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler/Fiddler.postman_collection.json "link")    
