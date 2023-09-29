@@ -32,7 +32,7 @@ Homework Fiddler:
 
 `var req = JSON.parse(request.data);`
 
-//4. Спарсить request.(GET)  
+// Спарсить request.(GET)  
 `var req_url = pm.request.url.query.toObject();`
 
 // сравнение  
