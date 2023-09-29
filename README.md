@@ -18,30 +18,28 @@ Homework Fiddler:
 
 
 # Основные команды
-// Спарсить response body в json.
+
+**ПАРСИНГ**
+
+// Спарсить response body в json.  
 
 `var jsonData = pm.response.json();`
 
 
-// Спарсить request. (POST) (переменные в Body - form-data)
+// Спарсить request. (POST) (переменные в Body - form-data)  
 
 `var req = request.data`
 
 
-// Спарсить request. (POST) (переменные в Body - raw(JSON))
+// Спарсить request. (POST) (переменные в Body - raw(JSON))  
 
 `var req = JSON.parse(request.data);`
 
-// Спарсить request.(GET)  
+//Спарсить request.(GET)  
+
 `var req_url = pm.request.url.query.toObject();`
 
-// сравнение  
-`eql "="`  
-`below "<"`  
-`above ">"`  
-
-
-// pm.expect - ожидание
+_______________________________________________________________________
 
 // пример построения теста
 
@@ -51,8 +49,70 @@ pm.test("Текстовка", function () {
 });
 ```
 
+// сравнение  
+`.to.eql` "="  
+`.to.below` "<"  
+`.to.above` ">"  
+
+// ожидание  
+`pm.expect` 
+
 // принадлежность к типу  
 `.to.be.a('number');`
 
-//вывод в консоль элемента по порядковому номеру  
+// наличие значения  
+`to.have.property`
+
+// вывод в консоль элемента по порядковому номеру  (из списка) ( а в Json нет порядковых номеров)
 `console.log(jsonData.salary[0])`
+
+_______________________________________________________________________
+
+**environment.set**  
+**environment.get**
+
+// Создать в окружении переменную name  
+`pm.environment.set("name");`
+
+// Создать в окружении переменную name и одновременно передать в нее переменную name из запроса URL  
+`pm.environment.set("name", req_url.name);`  
+
+//// получить из окружения переменную name  
+`pm.environment.get("name");`
+
+_______________________________________________________________________
+
+// Написать цикл который выведет в консоль по порядку элементы списка из параметра salary. []-список  
+```
+var n = 0;
+while (n < (jsonData.salary).length) 
+{
+console.log(jsonData.salary[n]);
+n++
+}
+```
+
+
+// Написать цикл который выведет в консоль по порядку элементы списка из параметра person. {}-JSON  
+
+```
+for (key in jsonData.person) {
+    console.log( key + ": " + jsonData.person[key])
+};
+```
+
+_______________________________________________________________________
+
+// перевод в другой тип  
+`String(jsonData.age)`
+
+**Типы переменных JS**  
+*String  
+*Number  
+*Object (JSON)  
+*Boolean  
+
+*null  
+*undefined  
+*symbol  
+*BigInt  
