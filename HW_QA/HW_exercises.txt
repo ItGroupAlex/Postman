@@ -334,7 +334,7 @@ Resp.
 
 ===================
 
-6) http://162.55.220.72:5005/currency
+6) http://162.55.220.72:5005/currency  (!!!ENDPOIN DON'T WORK!!! - выполнение невозможно)
 req.
 POST
 auth_token
@@ -358,7 +358,7 @@ Resp. Передаётся список массив объектов.
 
  ===================
 
-7) http://162.55.220.72:5005/curr_byn
+7) http://162.55.220.72:5005/curr_byn  (!!!ENDPOIN DON'T WORK!!! - выполнение невозможно)
 req.
 POST
 auth_token
