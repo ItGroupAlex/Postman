@@ -15,3 +15,44 @@ Homework Fiddler:
 * [задание и ход выполнения](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler/Fiddler_QA_HW.md "link")     
 * [выгрузка из Fiddler](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler/Rules_HW_fiddler.farx "link")
 * [выгрузка из Postman](https://github.com/ItGroupAlex/Postman/blob/main/Fiddler/Fiddler.postman_collection.json "link")    
+
+
+# Основные команды
+// Спарсить response body в json.
+
+`var jsonData = pm.response.json();`
+
+
+// Спарсить request. (POST) (переменные в Body - form-data)
+
+`var req = request.data`
+
+
+// Спарсить request. (POST) (переменные в Body - raw(JSON))
+
+`var req = JSON.parse(request.data);`
+
+//4. Спарсить request.(GET)  
+`var req_url = pm.request.url.query.toObject();`
+
+// сравнение  
+`eql "="`  
+`below "<"`  
+`above "<"`  
+
+
+// pm.expect - ожидание
+
+// пример построения теста
+
+```
+pm.test("Текстовка", function () {
+    pm.expect(jsonData.name).to.eql("Anna");
+});
+```
+
+// принадлежность к типу  
+`.to.be.a('number');`
+
+//вывод в консоль элемента по порядковому номеру  
+`console.log(jsonData.salary[0])`
