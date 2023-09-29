@@ -38,7 +38,7 @@ Homework Fiddler:
 // сравнение  
 `eql "="`  
 `below "<"`  
-`above "<"`  
+`above ">"`  
 
 
 // pm.expect - ожидание
