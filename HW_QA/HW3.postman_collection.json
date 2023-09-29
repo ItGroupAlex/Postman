@@ -393,7 +393,7 @@
 							"// 4) проверить, что 2-й элемент массива salary больше 1-го и 0-го\r",
 							"// eql \"=\"\r",
 							"// below \"<\"\r",
-							"// above \"<\"\r",
+							"// above \">\"\r",
 							"\r",
 							"pm.test(\"salary 3th element is more then salary elements 2nd and 1st \", function () {\r",
 							"    pm.expect(Number(jsonData.salary[0])).to.below(Number(jsonData.salary[2]));\r",
