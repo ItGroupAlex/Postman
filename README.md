@@ -60,6 +60,9 @@ pm.test("Текстовка", function () {
 // наличие значения  
 `to.have.property`
 
+// статус в ответе 200 (например)    
+`pm.response.to.have.status(200)`  
+
 // вывод в консоль элемента по порядковому номеру  (из списка)  (в JSON это не сработает, т.к. JSON не нумеруем)  
 `console.log(jsonData.salary[0])`
 
