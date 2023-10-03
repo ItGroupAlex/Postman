@@ -36,6 +36,39 @@ Homework Fiddler:
 
 `var req_url = pm.request.url.query.toObject();`
 
+//проверка схемы JSON   
+
+```
+var schema = {
+    "type": "object",
+    "required": [
+        "age",
+        "name",
+        "salary"
+    ],
+    "properties": {
+        "age": {
+            "type": "integer",
+            },
+        "salary": {
+            "type": "array",
+            "items": {
+                "anyOf": [{
+                    "type": "integer",
+                   },
+                {
+                    "type": "string",
+                }]
+            },
+        }
+    },
+};
+
+pm.test('Schema is valid', function () {
+    pm.expect(tv4.validate(jsonData, schema)).to.be.true;
+});
+
+```
 _______________________________________________________________________
 
 // пример построения теста
