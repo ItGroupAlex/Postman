@@ -38,7 +38,7 @@ Homework Fiddler:
 
 //проверка схемы JSON   
 
-```
+``` js
 var schema = {
     "type": "object",
     "required": [
@@ -73,7 +73,7 @@ _______________________________________________________________________
 
 // пример построения теста сравнения   
 
-```
+``` js
 pm.test("Текстовка", function () {
     pm.expect(jsonData.name).to.eql("Anna");
 });
