@@ -20,21 +20,29 @@ Homework Fiddler:
 
 // Спарсить response body в json.  
 
-`var jsonData = pm.response.json();`
+``` js
+var jsonData = pm.response.json();
+```
 
 
 // Спарсить request. (POST) (переменные в Body - form-data)  
 
-`var req = request.data`
+``` js 
+var req = request.data
+```
 
 
 // Спарсить request. (POST) (переменные в Body - raw(JSON))  
 
-`var req = JSON.parse(request.data);`
+``` js
+var req = JSON.parse(request.data);
+```
 
 //Спарсить request.(GET)  
 
-`var req_url = pm.request.url.query.toObject();`
+``` js
+var req_url = pm.request.url.query.toObject();
+```
 
 //проверка схемы JSON   
 
@@ -80,24 +88,40 @@ pm.test("Текстовка", function () {
 ```
 
 // сравнение  
-`.to.eql` "="  
-`.to.below` "<"  
-`.to.above` ">"  
+``` js
+.to.eql "="
+```
+``` js
+.to.below "<"  
+```
+``` js
+.to.above ">"
+```
 
 // ожидание  
-`pm.expect` 
+``` js
+pm.expect
+``` 
 
 // принадлежность к типу  
-`.to.be.a('number');`
+``` js
+.to.be.a('number');
+```
 
 // наличие значения  
-`to.have.property`
+``` js
+to.have.property
+```
 
 // статус в ответе 200 (например)    
-`pm.response.to.have.status(200)`  
+``` js
+pm.response.to.have.status(200)
+```  
 
 // вывод в консоль элемента по порядковому номеру  (из списка)  (в JSON это не сработает, т.к. JSON не нумеруем)  
-`console.log(jsonData.salary[0])`
+``` js
+console.log(jsonData.salary[0])
+```
 
 _______________________________________________________________________
 
@@ -105,18 +129,24 @@ _______________________________________________________________________
 **environment.get**
 
 // Создать в окружении переменную name  
-`pm.environment.set("name");`
+``` js
+pm.environment.set("name");
+```
 
 // Создать в окружении переменную name и одновременно передать в нее переменную name из запроса URL  
-`pm.environment.set("name", req_url.name);`  
+``` js
+pm.environment.set("name", req_url.name);
+```  
 
 //// получить из окружения переменную name  
-`pm.environment.get("name");`
+``` js
+pm.environment.get("name");
+```
 
 _______________________________________________________________________
 
 // Написать цикл который выведет в консоль по порядку элементы списка из параметра salary. []-список  
-```
+``` js
 var n = 0;
 while (n < (jsonData.salary).length) 
 {
@@ -128,7 +158,7 @@ n++
 
 // Написать цикл который выведет в консоль по порядку элементы списка из параметра person. {}-JSON  
 
-```
+``` js
 for (key in jsonData.person) {
     console.log( key + ": " + jsonData.person[key])
 };
@@ -137,7 +167,9 @@ for (key in jsonData.person) {
 _______________________________________________________________________
 
 // перевод в другой тип  
-`String(jsonData.age)`
+``` js
+String(jsonData.age)
+```
 
 **Типы переменных JS**  
 *String  
