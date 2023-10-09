@@ -44,6 +44,11 @@ var req = JSON.parse(request.data);
 var req_url = pm.request.url.query.toObject();
 ```
 
+// Спарсить request.(GET) (переменные в Body !!!)  
+``` js
+var req = JSON.parse(pm.request.body);
+```
+
 //проверка схемы JSON   
 
 ``` js
@@ -181,3 +186,12 @@ String(jsonData.age)
 *undefined  
 *symbol  
 *BigInt  
+__________________________________________________________________________
+raw JSON   (Там где String "")
+``` js
+{
+    "name":"{{name}}",
+    "age":{{age}},
+    "salary":1000,
+    "auth_token":""
+}
