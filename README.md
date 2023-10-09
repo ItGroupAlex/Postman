@@ -44,7 +44,7 @@ var req = JSON.parse(request.data);
 var req_url = pm.request.url.query.toObject();
 ```
 
-// Спарсить request.(GET) (переменные в Body !!!)  
+// Спарсить request.(GET) (переменные в Body - raw JSON !!!)  
 ``` js
 var req = JSON.parse(pm.request.body);
 ```
