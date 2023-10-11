@@ -25,17 +25,17 @@ var jsonData = pm.response.json();
 ```
 
 
-// Спарсить request. (POST) (переменные в Body - form-data)  
+// Спарсить request. (POST/GET) (переменные в Body - form-data)  
 
 ``` js 
 var req = request.data
 ```
 
 
-// Спарсить request. (POST) (переменные в Body - raw(JSON))  
+// Спарсить request. (POST/GET) (переменные в Body - raw(JSON))  
 
 ``` js
-var req = JSON.parse(request.data);
+var req = JSON.parse(pm.request.body);
 ```
 
 //Спарсить request.(GET)  
@@ -44,10 +44,7 @@ var req = JSON.parse(request.data);
 var req_url = pm.request.url.query.toObject();
 ```
 
-// Спарсить request.(GET) (переменные в Body - raw JSON !!!)  
-``` js
-var req = JSON.parse(pm.request.body);
-```
+
 
 //проверка схемы JSON   
 
