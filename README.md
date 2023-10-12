@@ -78,6 +78,12 @@ pm.test('Schema is valid', function () {
     pm.expect(tv4.validate(jsonData, schema)).to.be.true;
 });
 
+//или (без первоначального парсинга response в переменную) + более распианные ошибки   
+
+pm.test('Schema is valid', function() {
+  pm.response.to.have.jsonSchema(schema);
+});
+
 ```
 _______________________________________________________________________
 
