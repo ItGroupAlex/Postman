@@ -1,4 +1,4 @@
-<p align="center"><img src="AlekseiKhomchanouskiy_Postman.png"></p>
+<p align="center"><img src="AliakseiKhamchanouski_Postman.png"></p>
 
 # QA   
 Текстовка заданий Homework 1-3: [HW_exercises](https://github.com/ItGroupAlex/Postman/blob/main/HW_QA/HW_exercises.txt "link")   
