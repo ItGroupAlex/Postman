@@ -1,3 +1,5 @@
+<p align="center"><img src="AlekseiKhomchanouskiy_Postman.png"></p>
+
 # QA   
 Текстовка заданий Homework 1-3: [HW_exercises](https://github.com/ItGroupAlex/Postman/blob/main/HW_QA/HW_exercises.txt "link")   
 Homework 1-3 (code): [QA_HW.postman_collection.json](https://github.com/ItGroupAlex/Postman/blob/main/HW_QA/QA_HW.postman_collection.json "link")  
